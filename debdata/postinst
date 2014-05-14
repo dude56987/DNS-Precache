@@ -1,0 +1,7 @@
+# add the precache to launch on system boot
+sed -i.bak 's/exit\ 0//g' /etc/rc.local
+echo 'dns-precache &' >> /etc/rc.local
+echo 'exit 0' >> /etc/rc.local
+# remove empty lines
+sed -i.temp '/^$/d' /etc/rc.local 
+rm /etc/rc.local.temp

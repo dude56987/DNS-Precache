@@ -1,0 +1,11 @@
+Package: dns-precache
+Version: 0.1
+Section: admin
+Maintainer: Carl J Smith <BM-NBHLt5EUFVEbRCmrbVrfCyaB2c8d24U9>
+Installed-Size: 20
+Homepage: hacker-haven.com
+Priority: optional
+Architecture: all
+Depends: python (>=2.7)
+Description: Precaches the top 500 websites in dns.
+ Caches the top 500 websites into the system dns cache.

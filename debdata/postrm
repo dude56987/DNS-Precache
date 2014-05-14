@@ -1,0 +1,6 @@
+# remove precache launcher
+sed -i.bak 's/dns-precache \&//g' /etc/rc.local
+# remove empty lines
+sed -i.bak '/^$/d' /etc/rc.local
+# remove the backup file
+rm -fv /etc/rc.local.bak
